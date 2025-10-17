@@ -1,7 +1,9 @@
 #include "mylib.h"
 #include <stddef.h>
 
-int add(int a, int b) { return a + b; }
+int add(int a, int b) {
+    return a + b;
+}
 
 DivStatus mydiv(int a, int b, int *result) {
     if (result == NULL) {

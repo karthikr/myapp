@@ -2,19 +2,19 @@
 #include <glib.h>
 
 static void test_add(void) {
-  g_assert_cmpint(add(2, 3), ==, 5);
-  g_assert_cmpint(add(-1, 1), ==, 0);
+    g_assert_cmpint(add(2, 3), ==, 5);
+    g_assert_cmpint(add(-1, 1), ==, 0);
 }
 
 static void test_div_success(void) {
-    int res;
+    int res = 0;
     DivStatus status = mydiv(10, 2, &res);
     g_assert_cmpint(status, ==, DIV_SUCCESS);
     g_assert_cmpint(res, ==, 5);
 }
 
 static void test_div_by_zero(void) {
-    int res;
+    int res = 0;
     DivStatus status = mydiv(10, 0, &res);
     g_assert_cmpint(status, ==, DIV_ERR_DIV_BY_ZERO);
 }

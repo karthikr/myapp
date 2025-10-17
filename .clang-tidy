@@ -1,0 +1,14 @@
+Checks: '-*,
+    bugprone-*,
+    cert-*,
+    clang-analyzer-*,
+    misc-*
+    '
+
+CheckOptions: []
+
+FormatStyle: file
+
+HeaderFilterRegex: (src)|(tests)/
+
+WarningsAsErrors: '*'

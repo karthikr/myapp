@@ -1,5 +1,5 @@
-#include <gtest/gtest.h>
 #include "mylib.h"
+#include <gtest/gtest.h>
 
 TEST(AddTest, BasicAddition) {
     EXPECT_EQ(add(2, 3), 5);
@@ -7,13 +7,13 @@ TEST(AddTest, BasicAddition) {
 }
 
 TEST(DivTest, ValidDivision) {
-    int result;
+    int result = 0;
     EXPECT_EQ(mydiv(10, 2, &result), DIV_SUCCESS);
     EXPECT_EQ(result, 5);
 }
 
 TEST(DivTest, DivisionByZero) {
-    int result;
+    int result = 0;
     EXPECT_EQ(mydiv(10, 0, &result), DIV_ERR_DIV_BY_ZERO);
 }
 
