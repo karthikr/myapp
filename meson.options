@@ -1,0 +1,2 @@
+# Optional: define build options here
+option('tests', type: 'boolean', description: 'Build tests')
