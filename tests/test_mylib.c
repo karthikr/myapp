@@ -1,4 +1,4 @@
-#include "../src/mylib.h"
+#include "mylib.h"
 #include <glib.h>
 
 static void test_add(void) {
